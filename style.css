@@ -1,0 +1,21 @@
+body{
+    padding: 0;
+    margin:0;
+    height:100%;
+    transition:1s;
+    background: rgb(255, 255, 255);;
+}
+#mosca{
+    max-width: 50px;
+}
+
+.img_ceu{
+
+        width:100%;
+        height:100vh;
+        position: absolute;
+        z-index: -1;
+}
+#coracao{
+    max-width:25px;
+}

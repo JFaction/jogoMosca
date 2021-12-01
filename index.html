@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.css">
+    <title>Mata Mosca</title>
+</head>
+<body>
+    <img class="img_fundo" src="images/fundo_inicial.jpg" alt="">
+    
+    <div class="container">
+        <div class="menu">
+            <div>
+                <h1>Mata Mosca</h1>
+                <h3>Seleciona um nivel para iniciar o jogo</h3>
+    
+                <div>
+                    <select id="nivel">
+                        <option value="facil">Facil</option>
+                        <option value="normal">Normal</option>
+                        <option value="dificil">Dificil</option>
+                        <option value="impossivel">Impossivel</option>
+                    </select>
+                </div>
+                <br>
+                <button onclick="passarValor()">Iniciar</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function passarValor(){
+            var nivel = document.getElementById("nivel")
+            window.location = "jogo.html?nivel=" + nivel.value
+            console.log(nivel.value)
+        }
+    </script>
+</body>
+</html>
